@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #F0F0F0;
+  font-family: 'Jacques Francois', serif;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar section */
+header {
+  margin: 3rem 1rem;
+  padding: 0 2rem;
+}
+
+.navbar {
+  display: flex;
+  gap: 4.8rem;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 26px;
+  font-size: 14px;
+  box-shadow: 0 0 20px 5px rgb(105, 99, 99);
+}
+
+.navbar .terralogo {
+  height: 40px;
+}
+
+.navbar .item1 {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.navbar .item {
+  max-width: 10rem;
+  margin-left: 7rem;
+  padding: 5px;
+  font-size: 17px;
+}
+
+.navbar .img-profil {
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 1px;
+}
+
+/* Media queries pour les petits écrans */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    gap: 1.2rem;
+    padding: 20px;
+
+  }
+
+  .photoetproduit {
+    height: 80hw;
+  }
+
+  .navbar .item {
+    display: none;
+  }
+
+  .navbar .item1 {
+    margin: 0;
+    font-size: 16px;
+    display: none;
+
+  }
+
+  .navbar .img-profil {
+    margin-left: 0;
+    margin-top: 10px;
+    display: none;
+  }
+
+
+}
+
+.grid-container {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  /* Espace entre les éléments */
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.produit-description {
+  margin-top: 10px;
+}
+
+.formulair {
+  width: 40rem;
+  padding: 2rem;
+
+}
+
+.userinfo {
+  position: relative;
+  top: -26rem;
+  width: 20vw;
+  padding-left: 850px;
+  padding-right: 50px;
+  text-align: left;
+  border-radius: 12px;
+
+}
+
+
+@media (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    max-width: 300px;
+  }
+
+  .formulair {
+    position: relative;
+    margin-left: 5rem;
+  }
+}
+
+.tailles {
+  width: 18rem;
+  height: auto;
+  position: relative;
+  top: -31rem;
+  left: 45rem;
+
+
+}
+
+
+
+.fidelite {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* partie footer */
+.footer {
+  background-image: linear-gradient(to bottom, #cecece, #969696, #626262, #323232, #000000);
+  width: 100%;
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer .footer-left {
+  width: 33%;
+  padding-right: 15px;
+}
+
+.footer .icons {
+  margin-top: 25px;
+}
+
+.footer .icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: none;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer .footer-center {
+  width: 30%;
+}
+
+.footer .footer-center i {
+  background-color: #494f53;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .footer-center p a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer .footer-right {
+  width: 35%;
+}
+
+.logofooter {
+  width: 10px;
+  border-radius: 12px;
+}
+
+.footer .menu {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer .menu a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .menu a:hover {
+  color: #000000;
+}
+
+.footer .name {
+  color: #000000;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.lolo {
+  border-radius: 6px;
+  margin-top: 4rem;
+  margin-left: 11rem;
+  max-width: 80%;
+  max-height: 15rem;
+  background-color: rgb(173, 169, 140);
+  justify-content: space-between;
+  gap: 4px;
+  text-align: center;
+}
+
+.location {
+  font-size: 8px;
+  text-align: right;
+}
+
+
+/* Styles responsive pour mobiles et tablettes */
+@media (max-width: 1024px) {
+  #grid-container {
+    padding: 5rem;
+  }
+
+  /* partie footer */
+  .footer {
+    font-size: 14px;
+  }
+
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer .footer-center i {
+    margin-left: 0;
+  }
+
+  .lolo {
+    margin-top: 2rem;
+    margin-left: 5rem;
+    max-width: 90%;
+    max-height: 10rem;
+  }
+}
+
+@media (max-width: 767px) {
+
+  #container {
+    padding: 2rem;
+  }
+}
